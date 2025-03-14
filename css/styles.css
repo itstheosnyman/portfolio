@@ -39,7 +39,9 @@ Variables
   --regular: 400;
   --bold: 700;
   /* spacing */
+  --space-2: 2px;
   --space-4: 4px;
+  --space-6: 6px;
   --space-8: 8px;
   --space-12: 12px;
   --space-16: 16px;
@@ -131,7 +133,7 @@ Bio
 .bio__profile {
   display: flex;
   align-items: center;
-  gap: var(--space-16);
+  gap: var(--space-12);
   margin-bottom: var(--space-12);
 }
 
@@ -143,7 +145,8 @@ Bio
 .bio__image {
   border: 1px solid var(--bg-2);
   border-radius: var(--radius-full);
-  padding: var(--space-4);
+  box-shadow: 0px 0px 3px 0px var(--bg-2);
+  padding: var(--space-2);
 }
 
 .bio__title {
@@ -165,6 +168,7 @@ Bio
 
 .bio__links {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
   gap: var(--space-12);
 }
@@ -212,7 +216,7 @@ Link
 ==================================*/
 .link {
   color: var(--text-2);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: var(--space-4);
   transition: color 0.2s;
@@ -266,11 +270,53 @@ About
 }
 
 .about__description {
+  color: var(--text-2);
   margin-bottom: var(--space-12);
 }
 
 .about__description:last-of-type {
   margin: 0;
+}
+
+/*==================================
+Work experience
+==================================*/
+.work-experience__title {
+  margin-bottom: var(--space-16);
+}
+
+.job__profile {
+  display: flex;
+  gap: var(--space-12);
+  align-items: center;
+  margin-bottom: var(--space-8);
+}
+
+.job__profile-left {
+  width: 30%;
+  max-width: 4rem;
+}
+
+.job__image {
+  border: 1px solid var(--bg-2);
+  border-radius: var(--radius-8);
+  box-shadow: 0px 0px 3px 0px var(--bg-2);
+  padding: 2px;
+}
+
+.job__profile-right {
+  width: 70%;
+}
+
+.job__title {
+  margin-bottom: var(--space-4);
+}
+
+.job__tenure {
+  color: var(--text-2);
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
 }
 
 /*==================================
