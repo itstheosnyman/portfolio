@@ -27,8 +27,8 @@ Variables
   --primary-1: #d0e3ff;
   --primary-2: #6f819b;
   --primary-3: #43556d;
-  --accent-1: #f1a7a2;
-  --accent-2: #8b4b48;
+  --accent-1: #f8c2bd;
+  --accent-2: #5a2a28;
   --bg-1: #475665;
   --bg-2: #2e3d4b;
   --bg-3: #1e2d3b;
@@ -232,6 +232,30 @@ Divider
   border: 0;
   height: 2px;
   margin: var(--space-20) 0;
+}
+
+/*==================================
+Skills
+==================================*/
+.skills__title {
+  margin-bottom: var(--space-16);
+}
+
+.skills__badges {
+  display: flex;
+  gap: var(--space-8);
+  flex-wrap: wrap;
+}
+
+/*==================================
+Badge
+==================================*/
+.badge {
+  background: var(--accent-1);
+  color: var(--accent-2);
+  padding: var(--space-4) var(--space-8);
+  border-radius: var(--radius-full);
+  font-weight: var(--bold);
 }
 
 /*==================================
