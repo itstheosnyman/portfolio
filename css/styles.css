@@ -259,6 +259,21 @@ Badge
 }
 
 /*==================================
+About
+==================================*/
+.about__title {
+  margin-bottom: var(--space-16);
+}
+
+.about__description {
+  margin-bottom: var(--space-12);
+}
+
+.about__description:last-of-type {
+  margin: 0;
+}
+
+/*==================================
 Layout
 ==================================*/
 .component-wrapper {
