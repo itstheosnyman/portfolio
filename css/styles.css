@@ -1,0 +1,98 @@
+/*==================================
+Self hosted fonts
+==================================*/
+@font-face {
+  font-display: swap;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/work-sans-v19-latin-regular.woff2") format("woff2"),
+    url("../assets/fonts/work-sans-v19-latin-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/work-sans-v19-latin-700.woff2") format("woff2"),
+    url("../assets/fonts/work-sans-v19-latin-700.ttf") format("truetype");
+}
+
+/*==================================
+Variables
+==================================*/
+:root {
+  /* colors */
+  --primary-1: #d0e3ff;
+  --primary-2: #6f819b;
+  --primary-3: #43556d;
+  --accent-1: #f1a7a2;
+  --accent-2: #8b4b48;
+  --bg-1: #475665;
+  --bg-2: #2e3d4b;
+  --bg-3: #1e2d3b;
+  --text-1: #ffffff;
+  --text-2: #e0e0e0;
+  /* typography */
+  --heading-height: 1.15;
+  --regular: 400;
+  --bold: 700;
+}
+
+/*==================================
+Typography
+==================================*/
+h1,
+h2,
+h3 {
+  line-height: var(--heading-height);
+}
+
+h1 {
+  font-size: 1.476rem;
+  font-size: clamp(
+    1.476rem,
+    1.2255454545454545rem + 1.2522727272727276vw,
+    2.027rem
+  );
+}
+
+h2 {
+  font-size: 1.383rem;
+  font-size: clamp(
+    1.383rem,
+    1.1925454545454546rem + 0.9522727272727275vw,
+    1.802rem
+  );
+}
+
+h3 {
+  font-size: 1.296rem;
+  font-size: clamp(
+    1.296rem,
+    1.1569090909090909rem + 0.6954545454545455vw,
+    1.602rem
+  );
+}
+
+p {
+  font-size: 1rem;
+}
+
+.small {
+  font-size: 0.875rem;
+}
+
+.x-small {
+  font-size: 0.75rem;
+}
+
+/*==================================
+Global styles
+==================================*/
+body {
+  background: var(--bg-3);
+  color: var(--text-1);
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+}
